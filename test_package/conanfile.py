@@ -16,4 +16,5 @@ class TestPackageConan(ConanFile):
 
     def test(self):
         with tools.environment_append(RunEnvironment(self).vars):
-            self.run(os.path.join("bin", "test_package"))
+            bin_path = os.path.join("bin", "test_package")
+            self.run('{} "2 + 3 * -7"  "(2 + 3) * 7"'.format(bin_path))
