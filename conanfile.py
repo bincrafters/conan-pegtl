@@ -5,7 +5,7 @@ class PEGTLConan(ConanFile):
     name = "pegtl"
     version = "2.5.1"
     description = "C++11 header-only parser combinator library for creating PEG parsers"
-    url = None
+    url = "https://github.com/pleroux0/conan-pegtl/"
     license = "MIT"
     homepage = "https://github.com/taocpp/PEGTL"
     exports = ["LICENSE.md"]
