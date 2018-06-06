@@ -13,6 +13,9 @@ class PEGTLConan(ConanFile):
     source_subfolder = "source_subfolder"
     no_copy_source = True
 
+    def configure(self):
+        self.output.warn("[DEPRECATED] Use pegtl/2.5.2@taocpp/stable")
+
     def source(self):
         tools.get("{}/archive/{}.tar.gz".format(self.homepage, self.version))
         extracted_dir = "PEGTL-" + self.version
